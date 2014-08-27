@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Princeton Review - lebanon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-responsive.css">
+
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/ie8.css">
+<![endif]-->
+<!--[if lt IE 8>
+  <link rel="stylesheet" type="text/css" href="css/ie7.css">
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="../images/favicon.ico">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+
+
+<!-- JS
+================================================== -->
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.js"></script> <!-- (form validation) -->
+<script type="text/javascript" src="../js/jquery.watermark.min.js"></script> <!-- (form filler) -->
+<script type="text/javascript" src="../js/waypoints.min.js"></script> <!-- (sticky top menu) -->
+<script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="../js/theme.js"></script>
+</head>
+
+<body>
+
+<div class="row">
+<div class="span12 offset1">
+<table class="table table-bordered table-hover table-condensed">
+  <tr class="info"><b>
+    <th>Full Name</th>
+    <th>Dream School</th>
+    <th>Program of Study</th>
+    <th>email</th>
+    <th>phone</th>
+  </tr>
+
+<% @leads.each do |lead| %>
+  <tr>
+    <td><%= lead.full_name %></td>
+    <td><%= lead.dream_school %></td>
+    <td><%= lead.program_of_study %></td>
+    <td><%= lead.email %></td>
+    <td><%= lead.phone %></td>
+  </tr>
+<% end %>
+</table>
+</div>
+</div>
+
+
+</body>
+</html>

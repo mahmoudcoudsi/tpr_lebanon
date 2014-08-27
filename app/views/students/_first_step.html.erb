@@ -1,0 +1,6 @@
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :course_of_interest, collection: Student::COURSES, :prompt => "Course of interest...", :name => "course" %>
+  <%= f.input :phone_home %>
+  <%= f.input :phone_cell %>
+  <%= f.input :email %>

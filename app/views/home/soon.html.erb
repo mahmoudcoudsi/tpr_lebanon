@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Princeton Review - lebanon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-responsive.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/ie8.css">
+<![endif]-->
+<!--[if lt IE 8>
+  <link rel="stylesheet" type="text/css" href="css/ie7.css">
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="../images/favicon.ico">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+
+
+<!-- JS
+================================================== -->
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../js/jquery.validate.js"></script> <!-- (form validation) -->
+<script type="text/javascript" src="../js/jquery.watermark.min.js"></script> <!-- (form filler) -->
+<script type="text/javascript" src="../js/waypoints.min.js"></script> <!-- (sticky top menu) -->
+<script type="text/javascript" src="../js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="../js/theme.js"></script>
+</head>
+
+<body>
+<!-- TOP MENU
+================================================== -->
+<div class="lock-header hidden-phone">
+  <div class="container">
+    <div class="row">
+      <div class="span4 offset2">
+        <h4>We're working on the site<span>Socialize:</span></h4>
+      </div>
+      <div class="span4">
+      <a href="#"><img src="../images/Facebook.png" alt="HOME"></a>
+      <a href="#"><img src="../images/Pinterest.png" alt="HOME"></a>
+      <a href="#"><img src="../images/Twitter.png" alt="HOME"></a>
+      <a href="#"><img src="../images/Feed.png" alt="HOME"></a>
+      <a href="#"><img src="../images/Share-This.png" alt="HOME"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-wrapper">
+  <div class="agency-wrap">
+    <div class="container page-container home-container">
+      <div class="row"><br/>
+        <div class="span3 offset1">
+          <div class="americas">
+            America's
+          </div>
+          <div class="popular">
+            Most Popular
+          </div>
+          <div class="americas">
+            Test Prep Company<br/>Is now in Lebanon
+          </div>
+        </div>
+        <div class="span2 offset5">
+                <img src="../images/logo.png">
+        </div>
+      </div>
+<!-- TOP PAGE DISPLAY
+================================================== -->
+          <div class="header-main hidden-phone">
+          <div class="search">
+            <br class="hidden-phone">
+            <h4>This page is coming soon<br/><br/>Meanwhile, please fill in the information below and we will be in touch with you shortly</h4>
+            <%= simple_form_for @lead, :html=> { class: 'theme-form sign-up-form' }  do |f| %>
+              <% if @lead.full_name == nil %><%= f.input_field :full_name, :placeholder => "Full name...", :label => false %><% end %>
+              <% if @lead.email == nil %><%= f.input_field :email, :placeholder => "Email...", :label => false %><br/><br/><% end %>
+              <% if @lead.phone == nil %><%= f.input_field :phone, :placeholder => "Phone...", :label => false %>
+              <%= f.button :submit, 'Contact Me' %><% end %>
+            <% end %>
+          </div>
+          </div>
+          
+          <div class="header-main-phone visible-phone">
+          <div class="search">
+            <h4>This page is coming soon<br/><br/>Meanwhile, please fill in the information below and we will be in touch with you shortly</h4>
+            <%= simple_form_for @lead, :html=> { class: 'theme-form sign-up-form' }  do |f| %>
+              <% if @lead.full_name == nil %><%= f.input_field :full_name, :placeholder => "Full name...", :label => false %><% end %>
+              <% if @lead.email == nil %><%= f.input_field :email, :placeholder => "Email...", :label => false %><br/><br/><% end %>
+              <% if @lead.phone == nil %><%= f.input_field :phone, :placeholder => "Phone...", :label => false %>
+              <%= f.button :submit, 'Contact Me' %><% end %>
+            <% end %>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#feature-set" class="down-tab hidden-phone" name="feature-set">
+    Scroll Down for regular site <i class="arrow arrow-down">&nbsp;</i>
+  </a>
+
+
+<!-- 
+  <div class="full-width-features feature-1">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <h1>4 Steps to be ready to apply to your dream school</h1><br/>
+        </div>
+        <div class="span3">
+          <h3>1</h3>
+          <p>
+            Know what it takes to get into your college (or grad school) of choice
+          </p>
+        </div>
+        <div class="span3">
+          <h3>2</h3>
+          <p>
+            Take a diagnostic test to know where you are
+          </p>
+        </div>
+        <div class="span3">
+          <h3>3</h3>
+          <p>
+            Take a course with us (with a score improvement guarantee)
+          </p>
+        </div>
+        <div class="span3">
+          <h3>4</h3>
+          <p>
+            Send your application in
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+  <div class="full-width-features feature-2">
+    <div class="container">
+      <div class="row">
+
+<!-- PRICES TABLE
+================================================== -->
+        <div class="span12">
+          <h1>Our Courses</h1>
+          <h2>Take a course with us, score improvement is guaranteed <Br class="hidden-phone"> Get exclusive access to our state-of-the-arts online student center </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+        </div>
+        <div class="span12">
+            <div class="pricing-table-wrapper">
+                <div class="pricing-table row-fluid">
+                    <ul class="pricing-column span3">
+                        <li class="pricing-title"><a href="/sat/index">SAT</a></li>
+                        
+                        <!-- <li class="pricing-price">$1000
+                        </li> -->
+                        
+                        <li>36 hours of<br/>in-person prep</li>
+                        <li>Certified<br/>instructor</li>
+                        <li>4 proctored<br/>practice tests</li>
+                        <li>15 Additional<br/>practice SATs</li>
+                        <li>40-60 hours<br/>of extra online video lessons</li>
+                        <li>150-point<br/>score-improvement guarantee</li>
+                        <li>Upcoming exams<br/>May 3, 2014</li>
+
+                        <li class="pricing-button">
+                            <a class="button" href="/images/SAT_May_2014.pdf" target="_blank">Take a course for<br>May. 3 exam</a>
+                        </li>
+                        <li class="pricing-button">
+                            <a class="button" href="/sat/index">Learn more</a>
+                        </li>
+
+                    </ul>
+                    <ul class="pricing-column span3">
+                        <li class="pricing-title">MCAT</li>
+                        
+                        <li>105 hours of<br/>class instruction</li>
+                        <li>3 to 5 trained<br/>subject-matter experts</li>
+                        <li>19 full-length<br/>practice tests</li>
+                        <li>Access to <b>amplifire™</b><br/>an exclusive learning technology</li>
+                        <li>135+ hours of online<br/>resources</li>
+                        <li>Score higher or get</br/>your money back</li>
+                        <li><br/><br/><br/></li>
+
+                        <li class="pricing-button">
+                            MCAT<br>not currently available
+                        </li>
+                        <li class="pricing-button">
+                            <a class="button" href="#">Learn more</a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="pricing-column span3">
+                        <li class="pricing-title">GMAT</li>
+                        
+                        <li>32 hours of<br/>in-person prep</li>
+                        <li>Certified<br/>instructor</li>
+                        <li>10 computer-adaptive<br/>practice tests</li>
+                        <li>Essay feedback with<br/>Live Grader</li>
+                        <li>Recordings of all classes<br/>available online</li>
+                        <li>Score higher or get<br/>your money back</li>
+                        <li><br/><br/><br/></li>
+                        
+                        <li class="pricing-button">
+                            <a class="button" href="#">Take a course<br/><br/></a>
+                        </li>
+                        <li class="pricing-button">
+                            <a class="button" href="#">Learn more</a>
+                        </li>
+
+                    </ul>
+                    <ul class="pricing-column span3">
+                        <li class="pricing-title">GRE</li>
+                        
+                        <li>28 hours of<br/>live instruction</li>
+                        <li>Certified<br/>instructor</li>
+                        <li>8 full-length adaptive<br/>practice tests</li>
+                        <li><br/><br/></li>
+                        <li>184 hours of drills<br/>practice tests and recorded lessons</li>
+                        <li>Score higher or get<br/>your money back</li>
+                        <li><br/><br/><br/></li>
+
+                        <li class="pricing-button">
+                            <a class="button" href="#">Take a course<br/><br/></a>
+                        </li>
+                        <li class="pricing-button">
+                            <a class="button" href="#">Learn more</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    
+                </div>
+            </div>        </div>
+      </div>
+    </div>
+  </div>
+  <div class="full-width-features feature-3">
+    <div class="container">
+      <div class="row">
+
+<!-- TEAM SECTION
+================================================== -->
+        <div class="span12">
+          <h1>Free Diagnostic Test</h1>
+          <h2>To encourage you to get started,<br>We are offering diagnostic tests throughout our soft opening period.</h2>
+          <a class="btn-large btn-info" href="/leads/new">Start here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- CONTACT FORM & MAP
+================================================== -->
+<div class="footer" name="contact">
+  <div class="container contact-form">
+    <div class="row">
+      <div class="span12">
+      <br>
+      <br>
+      <h3>Contact Us</h3>
+            <div class="map"><iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=las+tablas,+madrid&amp;fb=1&amp;hq=las+tablas,&amp;hnear=0xd42287d383766c9:0xad469cc0ed50997d,Madrid,+Espa%C3%B1a&amp;cid=0,0,15011046097507982567&amp;t=m&amp;iwloc=A&amp;ll=40.421889,-3.713523&amp;spn=0.006295,0.006295&amp;output=embed"></iframe></div>
+      <br>
+      </div>
+      <form action="" method="post" class="theme-form">
+        <div class="span3">
+          <input type="text" name="namefield"  title="Name" class="required" id="name-field">
+        </div>  
+        <div class="span3">
+          <input type="email" name="emailfield" title="Email" class="email required" id="email-field">
+        </div>
+        <div class="span3">
+          <input type="text" name="phonefield" title="Phone" id="phone-field">
+        </div>
+        <div class="span3">
+          <input type="text" name="companyfield" title="Company" id="company-field">
+        </div>
+        <div class="span12  comments-textarea">
+          <textarea name="commentsfield" title="" id="comments-field"></textarea>
+        </div>
+        <div class="span4 offset4">
+          <input type="hidden" name="say" value="hello">
+          <input type="submit" value="SUBMIT!">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container">
+        The Princeton Review - Lebanon<br>
+        463 Bliss St.<br>
+        Al Farra Building - Second floor<br>
+        Ras Beirut<br>
+        Beirut, Lebanon<br>
+        +961 1 367 688<br>
+  </div>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,403 @@
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+<style>
+h1.prepare {
+font-family: "Arvo", Helvetica, Arial, sans-serif;
+font-weight: 900;
+color: black;
+font-size: 55px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+h1.slider {
+font-family: "Arvo", Helvetica, Arial, sans-serif;
+font-size: 35px;
+margin-left: 65px;
+color: white;
+}
+h2.slider {
+margin-left: 65px;
+font-size: 20px;
+}
+p.slider {
+margin-left: 65px;
+}
+p.more_info {
+color: white;
+}
+h4.name {
+color: white;
+margin-bottom: 15px;
+}
+.services .well { 
+min-height: 20px;
+background: rgba(30,30,30,0.7);
+color: white;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.services .well:hover {
+background-color: rgba(225,50,125,0.7);
+color: #fff;
+}
+.well {
+border: 0px solid #e3e3e3;
+}
+.tab-content > .active {
+background: rgba(255,255,255,0.7);
+width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+a {
+color: #E1327D;
+text-decoration: none;
+font-size: 16px;
+}
+body {
+font-size: 14px;
+color: black;
+}
+.container.homeslider { 
+  width: 100%; 
+  margin-top: 25px;
+}
+.slider .well { background: rgba(30,30,30,0.4); }
+.slider .carousel .carousel-control {
+display: inline;
+}
+.down-tab {
+width: 100%;
+display: block;
+background: #E1327D;
+height: 34px;
+color: #fff;
+font-family: "PT Sans", sans-serif;
+text-align: center;
+text-decoration: none;
+font-weight: 700;
+font-size: 19px;
+padding-top: 10px;
+}
+.pricing-table {
+background-color: transparent;
+border: 0px solid #e3e3e3;
+}
+.pricing-column li {
+background: white;
+}
+.pricing-column:hover > .pricing-title {
+border-top: 3px solid rgba(225, 50, 125,0.9);
+}
+.pricing-column li:nth-child(even) {
+background: rgba(255,255,255,0.9);
+}
+.pricing-column li.pricing-sectiontitle {
+color: white;
+background: rgba(225, 50, 125,0.7);
+background: rgba(30,30,30,0.5);
+font-weight: 600;
+font-size: 16px;
+}
+.accordion {
+margin-bottom: 20px;
+background: white;
+}
+</style>
+
+<% if false %><a href="#more" class="down-tab">Click to learn more about the SAT <i class="fa fa-arrow-down"></i></a><% end %>
+<section class="slider">
+    <div class="container homeslider">
+        <div class="well homeslider">
+            <div id="myCarousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="active item">
+                    <div class="row">
+                      <div class="span5">
+                        <a data-toggle="tab" href="#ultimate">
+                          <h1 class="slider">Ultimate SAT Course</h1>
+                        </a>
+                        <h2 class="slider">Our Most Popular Comprehensive Prep</h2>
+                        <p class="slider">
+                          Master your exam with the most comprehensive prep course. We'll review all the content, teach you our exclusive strategies and ensure you're completely prepared with extensive in-class practice. Ultimate delivers 30 hours of live instruction and 4 practice tests, plus essential insider admissions advice.
+                        </p>
+                        <a href="#more">
+                          <p class="slider more_info">More Info about the SAT Test</p>
+                        </a>
+                      </div>
+                      <div class="span4 offset2">
+                        <img src="../images/tilted_book.png" height="55%" width="55%">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="span5">
+                        <a data-toggle="tab" href="#honors">
+                          <h1 class="slider">Honors SAT Course</h1>
+                        </a>
+                        <h2 class="slider">Our Most Popular Comprehensive Prep</h2>
+                        <p class="slider">
+                          Master your exam with the most comprehensive prep course. We'll review all the content, teach you our exclusive strategies and ensure you're completely prepared with extensive in-class practice. Ultimate delivers 30 hours of live instruction and 4 practice tests, plus essential insider admissions advice.
+                        </p>
+                      </div>
+                      <div class="span4 offset2">
+                        <img src="../images/tilted_book.png" height="55%" width="55%">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="span5">
+                        <a data-toggle="tab" href="#private">
+                          <h1 class="slider">Private SAT Tutoringe</h1>
+                        </a>
+                        <h2 class="slider">Our Most Popular Comprehensive Prep</h2>
+                        <p class="slider">
+                          Master your exam with the most comprehensive prep course. We'll review all the content, teach you our exclusive strategies and ensure you're completely prepared with extensive in-class practice. Ultimate delivers 30 hours of live instruction and 4 practice tests, plus essential insider admissions advice.
+                        </p>
+                      </div>
+                      <div class="span4 offset2">
+                        <img src="../images/tilted_book.png" height="55%" width="55%">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="pricing-table-wrapper">
+  <div class="pricing-table row-fluid">
+      <ul class="pricing-column span4">
+          <li class="pricing-title">ULTIMATE COURSE</li>
+          <li class="pricing-sectiontitle">Course Benefits</li>
+          <li>The most comprehensive prep</li>
+          <li>In-class mastery with<br/> extensive practice and drills</li>
+          <li>Highly trained<br/>and charismatic teachers</li>
+          <li class="pricing-sectiontitle">Course Features</li>
+          <li><b>Hours:</b> 30 hours</li>
+          <li><b>Practice Tests:</b> 4 proctored practice tests<br/>and 15 additional tests </li>
+          <li><b>Study Tools:</b> Access to our SAT Self-Paced courses<br/> with 40-60 hours of video lessons</li>
+          <li><b>Extra Help:</b> Interactive Admissions<br/>and Financial Aid courses</li>
+          <li><b>Guarantee:</b> 150-point score-improvement<br/> guarantee</li>
+          <li class="pricing-button">
+              <a class="button" href="/leads/new">Register</a>
+          </li>
+      </ul>
+      <ul class="pricing-column span4">
+          <li class="pricing-title">SAT HONORS</li>
+          <li class="pricing-sectiontitle">Course Benefits</li>
+          <li>A guaranteed score of 2100 or higher on the SAT</li>
+          <li>Prep with our most experienced<br/>and successful instructors</li>
+          <li>The most classroom hours you can<br/> get with a Princeton Review expert</li>
+          <li class="pricing-sectiontitle">Course Features</li>
+          <li><b>Hours:</b> 60 hours of in-class instruction</li>
+          <li><b>Practice Tests:</b> 5 proctored practice tests<br/>and 15 additional tests </li>
+          <li><b>Study Tools:</b> Access to 20-30 hours<br/>of additional video lessons </li>
+          <li><b>Extra Help:</b> Interactive Admissions<br/>and Financial Aid courses</li>
+          <li><b>Guarantee:</b> Score 2100 or higher on the SAT<br/> or get your money back</li>
+          <li class="pricing-button">
+              <a class="button" href="/leads/new">Register</a>
+          </li>
+      </ul>
+      <ul class="pricing-column span4">
+          <li class="pricing-title">Private Tutoring</li>
+          <li class="pricing-sectiontitle">Course Benefits</li>
+          <li>The freedom to meet at the time you want</li>
+          <li>A tutor with the skills and style<br/> to best meet your needs</li>
+          <li>A plan to help you get into<br/> your top-choice schools</li>
+          <li class="pricing-sectiontitle">Course Features</li>
+          <li>A custom prep plan designed by an elite tutor</li>
+          <li>Frequent adjustments to match your progress<br/><br/></li>
+          <li>4 core practice SATs and 17 additional exams<br/><br/></li>
+          <li><br><br/></li>
+          <li><br><br/></li>
+          <li class="pricing-button">
+              <a class="button" href="/leads/new">Register</a>
+          </li>
+      </ul>
+  </div>
+</div>
+
+<div class="accordion" id="accordion1"><a id="more">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                <center>SAT Quick facts</center>
+            </a>
+        </div>
+        <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+            <p><center>
+              <b>Frequency:</b> 6 times/year<br/>
+              <b>Duration:</b> 3 hours, 45 minutes<br/>
+              <b>Sections:</b> math, critical reading, writing<br/>
+              <b>Cost:</b> $50<br/>
+              <b>max. score</b> 800 per section<br/>
+              <b>avg. score</b>  math – 516
+                critical reading – 501
+                writing – 492
+            </p></center>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                <center>What is the SAT and why is it important</center>
+            </a>
+        </div>
+        <div id="collapseTwo" class="accordion-body collapse in">
+            <div class="accordion-inner">
+            <p>
+              Created by The College Board, the SAT is an entrance exam used by most colleges and universities to make admissions decisions. The idea (in theory, at least) is to provide colleges with one common criterion that can be used to compare all applicants. However, it is just one factor in the admissions decision. Schools also consider your high school GPA, academic transcript, letters of recommendation, interviews and personal essays. The weight placed on SAT scores varies from school to school. For more specific information on the importance of SAT scores at the schools you're interested in, contact the admissions offices directly. 
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                <center>When is the SAT offered?</center>
+            </a>
+        </div>
+        <div id="collapseThree" class="accordion-body collapse in">
+            <div class="accordion-inner">
+            <p>
+              The SAT is offered every year in October, November, December, January, May and June.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+                <center>What specifically does the SAT test?</center>
+            </a>
+        </div>
+        <div id="collapseFour" class="accordion-body collapse">
+            <div class="accordion-inner">
+            <p>
+              There are three SAT sections: Math, Critical Reading and Writing. The Writing section requires test takers to complete an essay that is factored into the final score. Start to finish, the test will take you three hours and 45 minutes.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+                <center>How is the SAT scored?</center>
+            </a>
+        </div>
+        <div id="collapseFive" class="accordion-body collapse">
+            <div class="accordion-inner">
+            <p>
+              Each section is scored on a 200- to 800-point scale, making the "perfect" score 2400.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                <center>How do I know if my score is good enough to get me into my dream school?</center>
+            </a>
+        </div>
+        <div id="collapseSix" class="accordion-body collapse">
+            <div class="accordion-inner">
+            <p>
+              Good question. Check out the Can I Get In function in our School Search.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven">
+                <center>How do I register?</center>
+            </a>
+        </div>
+        <div id="collapseSeven" class="accordion-body collapse">
+            <div class="accordion-inner">
+            <p>
+              SAT registration deadlines fall approximately five weeks before each test date. You can register online at the College Board website.
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseEight">
+                <center>How can I prepare?</center>
+            </a>
+        </div>
+        <div id="collapseEight" class="accordion-body collapse">
+            <div class="accordion-inner">
+            <p>
+              We can help. We have prep solutions for every student and every budget. Check out the Prep for the SAT section of our website. 
+            </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% if false %>
+        <center><h1 class="prepare">Prepare for the SAT</h1></center>
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="span2 offset3">
+                        <div class="well well-small">
+                            <h4 class="name">Ultimate Course</h4>
+                            <p>Our Most Popular Comprehensive Prep</p>
+                              <a data-toggle="tab" href="#ultimate">
+                                  More Info
+                              </a>
+
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="well well-small">
+                        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+                            <h4 class="name">SAT Honors</h4>
+                            <p>Intensive Prep for Top-Scoring Students</p>
+                              <a data-toggle="tab" href="#honors">
+                                  More Info
+                              </a>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <div class="well well-small">
+                            <h4 class="name">Private Tutoring</h4>
+                            <p>In Person 1-on-1 Instruction</p>
+                              <a data-toggle="tab" href="#private">
+                                  More Info
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Tabbable -->
+
+          <!-- Tabs Contents -->
+          <div class="tab-content">
+            <!-- Tab1: Project Details -->
+            <div id="ultimate" class="tab-pane active">
+                Ultimate
+            </div>
+
+            <div id="honors" class="tab-pane">
+                Honors  
+            </div>
+
+            <div id="private" class="tab-pane">
+                Private
+            </div>
+
+          </div>
+<% end %>

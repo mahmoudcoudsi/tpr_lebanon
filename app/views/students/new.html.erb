@@ -1,0 +1,11 @@
+<%= simple_form_for @student, :html => { :class => 'form-horizontal' } do |f| %>
+
+  <%= render "#{@student.current_step}_step", :f => f %>
+
+  <div class="form-actions">
+    <%= f.button :submit, 'Continue', :class => 'btn-primary' %>
+    <%= f.button :submit, 'Back', :name => "back_button", :class => 'btn-primary' unless @student.first_step? %>
+  </div>
+
+<% end %>
+

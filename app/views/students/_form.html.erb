@@ -1,0 +1,26 @@
+<%= simple_form_for @student, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :course_of_interest, collection: Student::COURSES, :prompt => "Course of interest..." %>
+  <%= f.input :phone_home %>
+  <%= f.input :phone_cell %>
+  <%= f.input :email %>
+  <%= f.input :current_institution %>
+  <%= f.input :source %>
+  <%= f.input :target_institution %>
+  <%= f.input :previous_score1 %>
+  <%= f.input :previous_score2 %>
+  <%= f.input :previous_score3 %>
+  <%= f.input :previous_score_total %>
+  <%= f.input :target_score1 %>
+  <%= f.input :target_score2 %>
+  <%= f.input :target_score3 %>
+  <%= f.input :target_score_total %>
+
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                students_path, :class => 'btn' %>
+  </div>
+
+<% end %>
